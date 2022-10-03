@@ -21,7 +21,7 @@ jobs:
     - run: |
         mvn deploy:deploy-file -DgroupId=group-id \
           -DartifactId=artifact-id \
-          -Dversion=1.0.0-${{ matrix.file }}-g${{ github.sha }} \
+          -Dversion=1.0.0-${{ matrix.file }}-g${{ github.sha }}-SNAPSHOT \
           -Dpackaging=jar \
           -Dfile=${{ matrix.file }} \
           -DrepositoryId=github \
